@@ -1,0 +1,160 @@
+{
+  "common": {
+    "joinAsLocal": "Als Einheimischer beitreten",
+    "joinAsVolunteer": "Als Freiwilliger beitreten",
+    "learnMore": "Mehr erfahren",
+    "getStarted": "Loslegen"
+  },
+  "hero": {
+    "title": "Staying in Bern",
+    "subtitle": "Menschliche Verbindung zuerst",
+    "description": "Baue dauerhafte Freundschaften in Bern auf. Werde Teil einer einladenden Gemeinschaft, in der authentische Verbindungen auf natürliche Weise entstehen.",
+    "languageLabel": "Deutsch",
+    "stats": {
+      "activeMembers": "Aktive Mitglieder",
+      "connectionsMade": "Verbindungen geknüpft",
+      "eventsMonthly": "Monatliche Events"
+    }
+  },
+  "video": {
+    "title": "Entdecke unsere Gemeinschaft",
+    "description": "Wo Einheimische und Freiwillige zusammenkommen, um bedeutungsvolle Verbindungen im Herzen von Bern zu schaffen."
+  },
+  "mission": {
+    "title": "Unsere Mission",
+    "description": "Staying in Bern ist ein gemeinschaftliches Zuhause, in dem die Verbindung an erster Stelle steht. Einheimische und Freiwillige treffen sich, um Mahlzeiten, Lachen, Musik und alltägliche Momente in einem sicheren, inklusiven Raum zu teilen. Freiwillige halten das Haus lebendig und einladend und schaffen eine familienähnliche Atmosphäre, in der sich alle – Familien, LGBTQ+, Menschen aller Hintergründe – zu Hause und als Teil von etwas Gemeinsamem fühlen können.",
+    "features": {
+      "authenticConnections": {
+        "title": "Authentische Verbindungen",
+        "description": "Echte Beziehungen fördern, die über oberflächliche Interaktionen hinausgehen"
+      },
+      "communityIntegration": {
+        "title": "Gemeinschaftsintegration",
+        "description": "Reisenden/Freiwilligen helfen, sich zu Hause zu fühlen und lokale Perspektiven zu bereichern"
+      },
+      "culturalExchange": {
+        "title": "Kultureller Austausch",
+        "description": "Vielfalt feiern und von verschiedenen Hintergründen lernen"
+      }
+    },
+    "values": {
+      "title": "Unsere Werte",
+      "humanConnectionFirst": {
+        "title": "Menschliche Verbindung zuerst",
+        "description": "Mahlzeiten, Lachen, Musik und Gespräche stehen im Mittelpunkt von allem, was wir tun."
+      },
+      "inclusivity": {
+        "title": "Inklusivität",
+        "description": "Alle Altersgruppen, Identitäten, Kulturen und Hintergründe sind willkommen."
+      },
+      "respect": {
+        "title": "Respekt",
+        "description": "Wir teilen den Raum mit Sorgfalt und balancieren individuelle Bedürfnisse mit dem Wohlergehen der Gemeinschaft."
+      },
+      "simplicity": {
+        "title": "Einfachheit",
+        "description": "Keine versteckten Absichten, kein kommerzieller Druck, nur ein Raum zum Treffen, Teilen und Dazugehören."
+      }
+    }
+  },
+  "location": {
+    "title": "Warum Bern?",
+    "subtitle": "Entdecke den Charme der Schweizer Hauptstadt durch die Augen der Einheimischen und die Herzen unserer Gemeinschaft.",
+    "features": {
+      "socialEvents": {
+        "title": "Soziale Events",
+        "description": "Nimm an Sprachaustausch und sozialen Treffen teil, um gemeinsam verborgene lokale Schätze zu entdecken."
+      },
+      "alpineAdventures": {
+        "title": "Alpine Abenteuer",
+        "description": "Erkunde die atemberaubenden Schweizer Alpen und die Landschaft mit deinen neuen lokalen Freunden."
+      },
+      "richCulture": {
+        "title": "Reiche Kultur",
+        "description": "Erlebe Berns UNESCO-Weltkulturerbe Altstadt und die lebendige Kulturszene."
+      }
+    }
+  },
+  "benefits": {
+    "title": "Was bringt es dir?",
+    "subtitle": "Egal, ob du ein Einheimischer bist, der seine Stadt teilen möchte, oder ein Freiwilliger, der authentische Verbindungen sucht – unsere Gemeinschaft bietet jedem etwas Besonderes.",
+    "forLocals": {
+      "title": "Für Einheimische",
+      "description": "Teile deine Liebe zu Bern und gewinne neue Perspektiven. Hilf Reisenden/Freiwilligen, sich zu Hause zu fühlen und baue bedeutungsvolle Freundschaften auf, die dein eigenes Leben bereichern.",
+      "benefits": [
+        "Interessante Menschen aus der ganzen Welt treffen",
+        "Die eigene Stadt mit neuen Augen entdecken",
+        "Ein vielfältiges soziales Netzwerk aufbauen",
+        "Einen positiven Einfluss in der Gemeinschaft haben"
+      ]
+    },
+    "forVolunteers": {
+      "title": "Für Freiwillige",
+      "description": "Erlebe authentische Schweizer Kultur durch echte lokale Verbindungen. Überspringe die Touristenfallen und entdecke Bern wie ein echter Einheimischer.",
+      "benefits": [
+        "Insider-Wissen über Bern erhalten",
+        "Authentische Schweizer Kultur erleben",
+        "Dauerhafte internationale Freundschaften aufbauen",
+        "Sich in der neuen Umgebung unterstützt fühlen"
+      ]
+    },
+    "forUnderrepresented": {
+      "title": "Unterrepräsentierte Gruppen",
+      "description": "Familien, LGBTQ+, People of Colour, verschiedene Glaubensrichtungen, alle Altersgruppen, die Räume verdienen, in denen sie sich einbezogen und wertgeschätzt fühlen. Werde Teil einer Gemeinschaft, in der dauerhafte Verbindungen gedeihen. Erlebe die Freude authentischer Beziehungen, die über kulturelle Grenzen hinausgehen.",
+      "benefits": [
+        "An regelmäßigen Community-Events teilnehmen",
+        "Zugang zu exklusiven lokalen Erlebnissen",
+        "Laufende Unterstützung und Freundschaftsnetzwerk",
+        "Möglichkeiten für persönliches Wachstum"
+      ]
+    }
+  },
+  "testimonials": {
+    "title": "Geschichten aus unserer Gemeinschaft",
+    "subtitle": "Höre von Einheimischen und Freiwilligen, die die Magie authentischer menschlicher Verbindungen in Bern erlebt haben.",
+    "cta": "Bereit, deine eigene Geschichte zu schreiben?",
+    "items": [
+      {
+        "name": "Sarah Chen",
+        "role": "Freiwillige aus Kanada",
+        "content": "Staying in Bern hat meine Erfahrung in der Schweiz transformiert. Durch diese Gemeinschaft habe ich Bern nicht nur besucht – ich habe es wirklich gelebt. Die Einheimischen, die ich kennengelernt habe, wurden zu lebenslangen Freunden, die mir verborgene Schätze zeigten, die ich alleine nie entdeckt hätte."
+      },
+      {
+        "name": "Marcus Weber",
+        "role": "Berner Einheimischer",
+        "content": "Freiwillige über diese Plattform zu beherbergen war unglaublich bereichernd. Ich habe so viel über verschiedene Kulturen gelernt, während ich meine Liebe zu Bern teilte. Es ist erstaunlich, wie diese Verbindungen meine eigene Perspektive auf meine Heimatstadt bereichert haben."
+      },
+      {
+        "name": "Monica Rodriguez",
+        "role": "Freiwillige aus Ecuador",
+        "content": "Staying in Bern ist eine erstaunliche erste Erfahrung für mich. Menschen aus anderen Ländern kennenzulernen und Kultur und Sprachen auszutauschen, während man in einer wunderschönen Stadt wie Bern ist, ist sehr interessant. In wenigen Tagen habe ich viel über Kommunikationsfähigkeiten gelernt, die der Schlüssel sind, um die Welt im Allgemeinen zu einem besseren Ort zu machen."
+      }
+    ]
+  },
+  "header": {
+    "nav": {
+      "mission": "Mission",
+      "benefits": "Vorteile",
+      "stories": "Geschichten",
+      "contact": "Kontakt"
+    },
+    "toggleMenu": "Menü umschalten"
+  },
+  "footer": {
+    "tagline": "Brücken bauen zwischen Einheimischen und Freiwilligen in Bern, Schweiz. Authentische Verbindungen schaffen, die ein Leben lang halten.",
+    "getInTouch": "Kontaktiere uns",
+    "madeWith": "Gemacht mit",
+    "inSwitzerland": "in der Schweiz",
+    "links": {
+      "privacyPolicy": "Datenschutzrichtlinie",
+      "termsOfService": "Nutzungsbedingungen",
+      "cookiePolicy": "Cookie-Richtlinie"
+    },
+    "socialLabels": {
+      "instagram": "Folge uns auf Instagram",
+      "facebook": "Folge uns auf Facebook",
+      "meetup": "Tritt unseren Meetup-Events bei",
+      "linkedin": "Folge uns auf LinkedIn"
+    }
+  }
+}

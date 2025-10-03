@@ -1,0 +1,160 @@
+{
+  "common": {
+    "joinAsLocal": "Join as a Local",
+    "joinAsVolunteer": "Join as a Volunteer",
+    "learnMore": "Learn More",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "title": "Staying in Bern",
+    "subtitle": "Human Connection First",
+    "description": "Build lasting friendships in Bern. Join a welcoming community where authentic connections happen naturally.",
+    "languageLabel": "English",
+    "stats": {
+      "activeMembers": "Active Members",
+      "connectionsMade": "Connections Made",
+      "eventsMonthly": "Events Monthly"
+    }
+  },
+  "video": {
+    "title": "Discover Our Community",
+    "description": "Where locals and volunteers come together to create meaningful connections in the heart of Bern."
+  },
+  "mission": {
+    "title": "Our Mission",
+    "description": "Staying in Bern is a communal home where connection comes first. Locals and volunteers meet to share meals, laughter, music, and everyday moments in a safe, inclusive space. Volunteers keep the house alive and welcoming, creating a family-like atmosphere where everyone: families, LGBTQ+, people of all backgrounds can feel at home and part of something shared.",
+    "features": {
+      "authenticConnections": {
+        "title": "Authentic Connections",
+        "description": "Foster genuine relationships beyond surface-level interactions"
+      },
+      "communityIntegration": {
+        "title": "Community Integration",
+        "description": "Help travellers/volunteers feel at home while enriching local perspectives"
+      },
+      "culturalExchange": {
+        "title": "Cultural Exchange",
+        "description": "Celebrate diversity and learn from different backgrounds"
+      }
+    },
+    "values": {
+      "title": "Our Values",
+      "humanConnectionFirst": {
+        "title": "Human Connection First",
+        "description": "Meals, laughter, music, and conversation are at the heart of everything we do."
+      },
+      "inclusivity": {
+        "title": "Inclusivity",
+        "description": "All ages, identities, cultures, and backgrounds are welcome."
+      },
+      "respect": {
+        "title": "Respect",
+        "description": "We share space with care, balancing individual needs and the community's well-being."
+      },
+      "simplicity": {
+        "title": "Simplicity",
+        "description": "No hidden agendas, no commercial push, just a space to meet, share, and belong."
+      }
+    }
+  },
+  "location": {
+    "title": "Why Bern?",
+    "subtitle": "Discover the charm of Switzerland's capital through the eyes of locals and the hearts of our community.",
+    "features": {
+      "socialEvents": {
+        "title": "Social Events",
+        "description": "Take part in Language Exchange and Social meetups to discover hidden local gems together."
+      },
+      "alpineAdventures": {
+        "title": "Alpine Adventures",
+        "description": "Explore the stunning Swiss Alps and countryside with your new local friends."
+      },
+      "richCulture": {
+        "title": "Rich Culture",
+        "description": "Experience Bern's UNESCO World Heritage old town and vibrant cultural scene."
+      }
+    }
+  },
+  "benefits": {
+    "title": "What's in it for You?",
+    "subtitle": "Whether you're a local wanting to share your city or a volunteer seeking authentic connections, our community offers something special for everyone.",
+    "forLocals": {
+      "title": "For Locals",
+      "description": "Share your love for Bern while gaining fresh perspectives. Help travellers/volunteers feel at home and build meaningful friendships that enrich your own life.",
+      "benefits": [
+        "Meet interesting people from around the world",
+        "Rediscover your city through new eyes",
+        "Build a diverse social network",
+        "Make a positive impact in your community"
+      ]
+    },
+    "forVolunteers": {
+      "title": "For Volunteers",
+      "description": "Experience authentic Swiss culture through genuine local connections. Skip the tourist traps and discover Bern like a true local.",
+      "benefits": [
+        "Get insider knowledge of Bern",
+        "Experience authentic Swiss culture",
+        "Build lasting international friendships",
+        "Feel supported in your new environment"
+      ]
+    },
+    "forUnderrepresented": {
+      "title": "Underrepresented Groups",
+      "description": "Families, LGBTQ+, people of colour, different faiths, all ages, who deserve spaces where they feel included and valued. Join a community where lasting connections flourish. Experience the joy of authentic relationships that go beyond cultural boundaries.",
+      "benefits": [
+        "Participate in regular community events",
+        "Access to exclusive local experiences",
+        "Ongoing support and friendship network",
+        "Opportunities for personal growth"
+      ]
+    }
+  },
+  "testimonials": {
+    "title": "Stories from Our Community",
+    "subtitle": "Hear from locals and volunteers who have experienced the magic of authentic human connections in Bern.",
+    "cta": "Ready to create your own story?",
+    "items": [
+      {
+        "name": "Sarah Chen",
+        "role": "Volunteer from Canada",
+        "content": "Staying in Bern transformed my experience in Switzerland. Through this community, I didn't just visit Bern - I truly lived it. The locals I met became lifelong friends who showed me hidden gems I never would have discovered on my own."
+      },
+      {
+        "name": "Marcus Weber",
+        "role": "Local Bernese",
+        "content": "Hosting volunteers through this platform has been incredibly rewarding. I've learned so much about different cultures while sharing my love for Bern. It's amazing how these connections have enriched my own perspective of my hometown."
+      },
+      {
+        "name": "Monica Rodriguez",
+        "role": "Volunteer from Ecuador",
+        "content": "Staying in Bern is an amazing first experience for me. To know people of the another countries and interchange the culture and the languages while stay in a beautifull city like Bern, is very interesting. In few days I learned a lot about the comunications skills, that are the keys for made the world in general one best place."
+      }
+    ]
+  },
+  "header": {
+    "nav": {
+      "mission": "Mission",
+      "benefits": "Benefits",
+      "stories": "Stories",
+      "contact": "Contact"
+    },
+    "toggleMenu": "Toggle menu"
+  },
+  "footer": {
+    "tagline": "Building bridges between locals and volunteers in Bern, Switzerland. Creating authentic connections that last a lifetime.",
+    "getInTouch": "Get in Touch",
+    "madeWith": "Made with",
+    "inSwitzerland": "in Switzerland",
+    "links": {
+      "privacyPolicy": "Privacy Policy",
+      "termsOfService": "Terms of Service",
+      "cookiePolicy": "Cookie Policy"
+    },
+    "socialLabels": {
+      "instagram": "Follow us on Instagram",
+      "facebook": "Follow us on Facebook",
+      "meetup": "Join our Meetup events",
+      "linkedin": "Follow us on LinkedIn"
+    }
+  }
+}

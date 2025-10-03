@@ -1,0 +1,160 @@
+{
+  "common": {
+    "joinAsLocal": "Únete como Local",
+    "joinAsVolunteer": "Únete como Voluntario",
+    "learnMore": "Saber más",
+    "getStarted": "Comenzar"
+  },
+  "hero": {
+    "title": "Staying in Bern",
+    "subtitle": "La Conexión Humana Primero",
+    "description": "Construye amistades duraderas en Berna. Únete a una comunidad acogedora donde las conexiones auténticas suceden de forma natural.",
+    "languageLabel": "Español",
+    "stats": {
+      "activeMembers": "Miembros Activos",
+      "connectionsMade": "Conexiones Creadas",
+      "eventsMonthly": "Eventos Mensuales"
+    }
+  },
+  "video": {
+    "title": "Descubre Nuestra Comunidad",
+    "description": "Donde locales y voluntarios se reúnen para crear conexiones significativas en el corazón de Berna."
+  },
+  "mission": {
+    "title": "Nuestra Misión",
+    "description": "Staying in Bern es un hogar comunitario donde la conexión es lo primero. Los locales y voluntarios se reúnen para compartir comidas, risas, música y momentos cotidianos en un espacio seguro e inclusivo. Los voluntarios mantienen la casa viva y acogedora, creando un ambiente familiar donde todos: familias, LGBTQ+, personas de todos los orígenes pueden sentirse como en casa y parte de algo compartido.",
+    "features": {
+      "authenticConnections": {
+        "title": "Conexiones Auténticas",
+        "description": "Fomentar relaciones genuinas más allá de las interacciones superficiales"
+      },
+      "communityIntegration": {
+        "title": "Integración Comunitaria",
+        "description": "Ayudar a viajeros/voluntarios a sentirse como en casa mientras enriquecen las perspectivas locales"
+      },
+      "culturalExchange": {
+        "title": "Intercambio Cultural",
+        "description": "Celebrar la diversidad y aprender de diferentes orígenes"
+      }
+    },
+    "values": {
+      "title": "Nuestros Valores",
+      "humanConnectionFirst": {
+        "title": "La Conexión Humana Primero",
+        "description": "Las comidas, la risa, la música y la conversación están en el corazón de todo lo que hacemos."
+      },
+      "inclusivity": {
+        "title": "Inclusividad",
+        "description": "Todas las edades, identidades, culturas y orígenes son bienvenidos."
+      },
+      "respect": {
+        "title": "Respeto",
+        "description": "Compartimos el espacio con cuidado, equilibrando las necesidades individuales y el bienestar de la comunidad."
+      },
+      "simplicity": {
+        "title": "Simplicidad",
+        "description": "Sin agendas ocultas, sin presión comercial, solo un espacio para conocerse, compartir y pertenecer."
+      }
+    }
+  },
+  "location": {
+    "title": "¿Por qué Berna?",
+    "subtitle": "Descubre el encanto de la capital de Suiza a través de los ojos de los locales y los corazones de nuestra comunidad.",
+    "features": {
+      "socialEvents": {
+        "title": "Eventos Sociales",
+        "description": "Participa en Intercambios de Idiomas y encuentros sociales para descubrir joyas locales ocultas juntos."
+      },
+      "alpineAdventures": {
+        "title": "Aventuras Alpinas",
+        "description": "Explora los impresionantes Alpes Suizos y el campo con tus nuevos amigos locales."
+      },
+      "richCulture": {
+        "title": "Cultura Rica",
+        "description": "Experimenta el casco antiguo de Berna, Patrimonio Mundial de la UNESCO, y su vibrante escena cultural."
+      }
+    }
+  },
+  "benefits": {
+    "title": "¿Qué hay para ti?",
+    "subtitle": "Ya seas un local que quiere compartir su ciudad o un voluntario que busca conexiones auténticas, nuestra comunidad ofrece algo especial para todos.",
+    "forLocals": {
+      "title": "Para Locales",
+      "description": "Comparte tu amor por Berna mientras obtienes nuevas perspectivas. Ayuda a viajeros/voluntarios a sentirse como en casa y construye amistades significativas que enriquezcan tu propia vida.",
+      "benefits": [
+        "Conocer personas interesantes de todo el mundo",
+        "Redescubrir tu ciudad con nuevos ojos",
+        "Construir una red social diversa",
+        "Tener un impacto positivo en tu comunidad"
+      ]
+    },
+    "forVolunteers": {
+      "title": "Para Voluntarios",
+      "description": "Experimenta la auténtica cultura suiza a través de conexiones locales genuinas. Evita las trampas para turistas y descubre Berna como un verdadero local.",
+      "benefits": [
+        "Obtener conocimiento interno de Berna",
+        "Experimentar la auténtica cultura suiza",
+        "Construir amistades internacionales duraderas",
+        "Sentirse apoyado en tu nuevo entorno"
+      ]
+    },
+    "forUnderrepresented": {
+      "title": "Grupos Subrepresentados",
+      "description": "Familias, LGBTQ+, personas de color, diferentes creencias, todas las edades, que merecen espacios donde se sientan incluidos y valorados. Únete a una comunidad donde florecen las conexiones duraderas. Experimenta la alegría de las relaciones auténticas que van más allá de las fronteras culturales.",
+      "benefits": [
+        "Participar en eventos comunitarios regulares",
+        "Acceso a experiencias locales exclusivas",
+        "Red continua de apoyo y amistad",
+        "Oportunidades para el crecimiento personal"
+      ]
+    }
+  },
+  "testimonials": {
+    "title": "Historias de Nuestra Comunidad",
+    "subtitle": "Escucha a locales y voluntarios que han experimentado la magia de las conexiones humanas auténticas en Berna.",
+    "cta": "¿Listo para crear tu propia historia?",
+    "items": [
+      {
+        "name": "Sarah Chen",
+        "role": "Voluntaria de Canadá",
+        "content": "Staying in Bern transformó mi experiencia en Suiza. A través de esta comunidad, no solo visité Berna, realmente la viví. Los locales que conocí se convirtieron en amigos para toda la vida que me mostraron joyas ocultas que nunca habría descubierto por mi cuenta."
+      },
+      {
+        "name": "Marcus Weber",
+        "role": "Local de Berna",
+        "content": "Hospedar voluntarios a través de esta plataforma ha sido increíblemente gratificante. He aprendido mucho sobre diferentes culturas mientras compartía mi amor por Berna. Es increíble cómo estas conexiones han enriquecido mi propia perspectiva de mi ciudad natal."
+      },
+      {
+        "name": "Monica Rodriguez",
+        "role": "Voluntaria de Ecuador",
+        "content": "Staying in Bern es una experiencia increíble para mí. Conocer personas de otros países e intercambiar la cultura y los idiomas mientras estás en una hermosa ciudad como Berna es muy interesante. En pocos días aprendí mucho sobre las habilidades de comunicación, que son las claves para hacer del mundo en general un lugar mejor."
+      }
+    ]
+  },
+  "header": {
+    "nav": {
+      "mission": "Misión",
+      "benefits": "Beneficios",
+      "stories": "Historias",
+      "contact": "Contacto"
+    },
+    "toggleMenu": "Alternar menú"
+  },
+  "footer": {
+    "tagline": "Construyendo puentes entre locales y voluntarios en Berna, Suiza. Creando conexiones auténticas que duran toda la vida.",
+    "getInTouch": "Contacta con nosotros",
+    "madeWith": "Hecho con",
+    "inSwitzerland": "en Suiza",
+    "links": {
+      "privacyPolicy": "Política de Privacidad",
+      "termsOfService": "Términos de Servicio",
+      "cookiePolicy": "Política de Cookies"
+    },
+    "socialLabels": {
+      "instagram": "Síguenos en Instagram",
+      "facebook": "Síguenos en Facebook",
+      "meetup": "Únete a nuestros eventos de Meetup",
+      "linkedin": "Síguenos en LinkedIn"
+    }
+  }
+}

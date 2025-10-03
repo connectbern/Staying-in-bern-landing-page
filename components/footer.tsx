@@ -1,6 +1,10 @@
+"use client"
+
 import { Mail, Phone, MapPin, Instagram, Facebook, Linkedin, Heart } from "lucide-react"
+import { useTranslation } from "react-i18next"
 
 export function Footer() {
+  const { t } = useTranslation()
   return (
     <footer id="contact" className="bg-foreground text-white">
       {/* Main Footer Content */}
@@ -15,8 +19,7 @@ export function Footer() {
               <span className="font-bold text-xl">Staying in Bern</span>
             </div>
             <p className="text-gray-300 mb-6 max-w-md leading-relaxed">
-              Building bridges between locals and volunteers in Bern, Switzerland. Creating authentic connections that
-              last a lifetime.
+              {t("footer.tagline")}
             </p>
             <div className="flex space-x-4">
               <a
@@ -24,7 +27,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors"
-                aria-label="Follow us on Instagram"
+                aria-label={t("footer.socialLabels.instagram")}
               >
                 <Instagram className="w-5 h-5" />
               </a>
@@ -33,7 +36,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors"
-                aria-label="Follow us on Facebook"
+                aria-label={t("footer.socialLabels.facebook")}
               >
                 <Facebook className="w-5 h-5" />
               </a>
@@ -42,7 +45,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors"
-                aria-label="Join our Meetup events"
+                aria-label={t("footer.socialLabels.meetup")}
               >
                 <span className="text-white font-bold text-lg italic transform -skew-x-12">M</span>
               </a>
@@ -51,7 +54,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors"
-                aria-label="Follow us on LinkedIn"
+                aria-label={t("footer.socialLabels.linkedin")}
               >
                 <Linkedin className="w-5 h-5" />
               </a>
@@ -63,7 +66,7 @@ export function Footer() {
 
           {/* Contact Info */}
           <div className="lg:col-span-2 lg:pl-8">
-            <h4 className="font-semibold text-lg mb-4">Get in Touch</h4>
+            <h4 className="font-semibold text-lg mb-4">{t("footer.getInTouch")}</h4>
             <ul className="space-y-3">
               <li className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-white flex-shrink-0" />
@@ -87,19 +90,32 @@ export function Footer() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2025 Staying in Bern. Made with <Heart className="w-4 h-4 text-rose-500 inline mx-1" /> in Switzerland.
+              © 2025 Staying in Bern. {t("footer.madeWith")} <Heart className="w-4 h-4 text-rose-500 inline mx-1" /> {t("footer.inSwitzerland")}.
             </p>
             <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                Privacy Policy
+              <a href="/privacy" className="text-gray-400 hover:text-white transition-colors">
+                {t("footer.links.privacyPolicy")}
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                Terms of Service
+              <a href="/terms" className="text-gray-400 hover:text-white transition-colors">
+                {t("footer.links.termsOfService")}
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                Cookie Policy
+              <a href="/cookies" className="text-gray-400 hover:text-white transition-colors">
+                {t("footer.links.cookiePolicy")}
               </a>
             </div>
+          </div>
+          <div className="text-center mt-4 pt-4 border-t border-gray-800">
+            <p className="text-gray-500 text-xs">
+              Developed by{" "}
+              <a
+                href="https://github.com/deepnclear"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors duration-200"
+              >
+                deepnclear
+              </a>
+            </p>
           </div>
         </div>
       </div>

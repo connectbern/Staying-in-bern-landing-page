@@ -1,31 +1,24 @@
+"use client"
+
 import { Star, Quote, Users, Heart, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import { useTranslation } from "react-i18next"
 
 export function TestimonialsSection() {
+  const { t } = useTranslation()
+
   const testimonials = [
     {
-      name: "Sarah Chen",
-      role: "Volunteer from Canada",
       image: "/professional-woman-smiling-warmly.jpg",
-      content:
-        "Staying in Bern transformed my experience in Switzerland. Through this community, I didn't just visit Bern - I truly lived it. The locals I met became lifelong friends who showed me hidden gems I never would have discovered on my own.",
       rating: 5,
     },
     {
-      name: "Marcus Weber",
-      role: "Local Bernese",
       image: "/friendly-swiss-man-with-warm-smile.jpg",
-      content:
-        "Hosting volunteers through this platform has been incredibly rewarding. I've learned so much about different cultures while sharing my love for Bern. It's amazing how these connections have enriched my own perspective of my hometown.",
       rating: 5,
     },
     {
-      name: "Monica Rodriguez",
-      role: "Volunteer from Ecuador",
       image: "/young-woman-with-bright-smile-and-kind-eyes.jpg",
-      content:
-        "Staying in Bern is an amazing first experience for me. To know people of the another countries and interchange the culture and the languages while stay in a beautifull city like Bern, is very interesting. In few days I learned a lot about the comunications skills, that are the keys for made the world in general one best place.",
       rating: 5,
     },
   ]
@@ -34,9 +27,9 @@ export function TestimonialsSection() {
     <section id="testimonials" className="py-20 bg-muted">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">Stories from Our Community</h2>
+          <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">{t("testimonials.title")}</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
-            Hear from locals and volunteers who have experienced the magic of authentic human connections in Bern.
+            {t("testimonials.subtitle")}
           </p>
         </div>
 
@@ -57,20 +50,20 @@ export function TestimonialsSection() {
               </div>
 
               {/* Content */}
-              <p className="text-muted-foreground mb-6 leading-relaxed italic">"{testimonial.content}"</p>
+              <p className="text-muted-foreground mb-6 leading-relaxed italic">"{t(`testimonials.items.${index}.content`)}"</p>
 
               {/* Author */}
               <div className="flex items-center">
                 <Image
                   src={testimonial.image || "/placeholder.svg"}
-                  alt={testimonial.name}
+                  alt={t(`testimonials.items.${index}.name`)}
                   width={48}
                   height={48}
                   className="w-12 h-12 rounded-full object-cover mr-4"
                 />
                 <div>
-                  <h4 className="font-semibold text-foreground">{testimonial.name}</h4>
-                  <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                  <h4 className="font-semibold text-foreground">{t(`testimonials.items.${index}.name`)}</h4>
+                  <p className="text-sm text-muted-foreground">{t(`testimonials.items.${index}.role`)}</p>
                 </div>
               </div>
             </div>
@@ -79,7 +72,7 @@ export function TestimonialsSection() {
 
         {/* Call to Action */}
         <div className="text-center mt-16">
-          <p className="text-lg text-muted-foreground mb-6">Ready to create your own story?</p>
+          <p className="text-lg text-muted-foreground mb-6">{t("testimonials.cta")}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
@@ -88,7 +81,7 @@ export function TestimonialsSection() {
             >
               <a href="https://form.typeform.com/to/eKoZvDsW" target="_blank" rel="noopener noreferrer">
                 <Users className="mr-2 h-5 w-5" />
-                Join as a Local
+                {t("common.joinAsLocal")}
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </a>
             </Button>
@@ -99,7 +92,7 @@ export function TestimonialsSection() {
             >
               <a href="https://form.typeform.com/to/j4aRQLtS" target="_blank" rel="noopener noreferrer">
                 <Heart className="mr-2 h-5 w-5" />
-                Join as a Volunteer
+                {t("common.joinAsVolunteer")}
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </a>
             </Button>
