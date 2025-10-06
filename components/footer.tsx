@@ -21,12 +21,12 @@ export function Footer() {
             <p className="text-gray-300 mb-6 max-w-md leading-relaxed">
               {t("footer.tagline")}
             </p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-3">
               <a
                 href="https://www.instagram.com/stayinginbern/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors"
+                className="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-foreground"
                 aria-label={t("footer.socialLabels.instagram")}
               >
                 <Instagram className="w-5 h-5" />
@@ -35,7 +35,7 @@ export function Footer() {
                 href="https://www.facebook.com/people/Staying-in-Bern/61579405777769/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors"
+                className="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-foreground"
                 aria-label={t("footer.socialLabels.facebook")}
               >
                 <Facebook className="w-5 h-5" />
@@ -44,7 +44,7 @@ export function Footer() {
                 href="https://www.meetup.com/meetup-bern/events/jvqxstyhcnbdc/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors"
+                className="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-foreground"
                 aria-label={t("footer.socialLabels.meetup")}
               >
                 <span className="text-white font-bold text-lg italic transform -skew-x-12">M</span>
@@ -53,7 +53,7 @@ export function Footer() {
                 href="https://www.linkedin.com/company/connect-bern-staying-in-bern/about/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors"
+                className="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-foreground"
                 aria-label={t("footer.socialLabels.linkedin")}
               >
                 <Linkedin className="w-5 h-5" />
@@ -92,14 +92,23 @@ export function Footer() {
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
               © 2025 Staying in Bern. {t("footer.madeWith")} <Heart className="w-4 h-4 text-rose-500 inline mx-1" /> {t("footer.inSwitzerland")}.
             </p>
-            <div className="flex space-x-6 text-sm">
-              <a href="/privacy" className="text-gray-400 hover:text-white transition-colors">
+            <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
+              <a
+                href="/privacy"
+                className="text-gray-400 hover:text-white transition-colors py-2 px-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-foreground rounded-sm min-h-[44px] flex items-center"
+              >
                 {t("footer.links.privacyPolicy")}
               </a>
-              <a href="/terms" className="text-gray-400 hover:text-white transition-colors">
+              <a
+                href="/terms"
+                className="text-gray-400 hover:text-white transition-colors py-2 px-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-foreground rounded-sm min-h-[44px] flex items-center"
+              >
                 {t("footer.links.termsOfService")}
               </a>
-              <a href="/cookies" className="text-gray-400 hover:text-white transition-colors">
+              <a
+                href="/cookies"
+                className="text-gray-400 hover:text-white transition-colors py-2 px-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-foreground rounded-sm min-h-[44px] flex items-center"
+              >
                 {t("footer.links.cookiePolicy")}
               </a>
             </div>
@@ -111,7 +120,7 @@ export function Footer() {
                 href="https://github.com/deepnclear"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors duration-200"
+                className="text-gray-400 hover:text-white transition-colors duration-200 inline-block py-2 px-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-foreground rounded-sm min-h-[44px] leading-[44px]"
               >
                 deepnclear
               </a>
