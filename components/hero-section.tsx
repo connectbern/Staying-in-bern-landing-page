@@ -23,15 +23,15 @@ export function HeroSection() {
         <div className="max-w-4xl mx-auto text-center pt-24">
           {/* Main Headline */}
           <div className="animate-fade-in-up">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-balance leading-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-balance leading-tight text-gray-900">
               {t("hero.title")}
-              <span className="block text-3xl sm:text-4xl lg:text-5xl mt-2 opacity-90">{t("hero.subtitle")}</span>
+              <span className="block text-3xl sm:text-4xl lg:text-5xl mt-2 text-gray-800">{t("hero.subtitle")}</span>
             </h1>
           </div>
 
           {/* Subtitle */}
           <div className="animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-            <p className="text-xl sm:text-2xl mb-8 opacity-90 text-pretty max-w-3xl mx-auto">
+            <p className="text-xl sm:text-2xl mb-8 text-gray-700 text-pretty max-w-3xl mx-auto">
               {t("hero.description")}
             </p>
           </div>
@@ -65,16 +65,16 @@ export function HeroSection() {
             style={{ animationDelay: "0.6s" }}
           >
             <div className="text-center">
-              <div className="text-3xl font-bold mb-2">500+</div>
-              <div className="text-sm opacity-80">{t("hero.stats.activeMembers")}</div>
+              <div className="text-3xl font-bold mb-2 text-gray-900">500+</div>
+              <div className="text-sm text-gray-700">{t("hero.stats.activeMembers")}</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold mb-2">1000+</div>
-              <div className="text-sm opacity-80">{t("hero.stats.connectionsMade")}</div>
+              <div className="text-3xl font-bold mb-2 text-gray-900">1000+</div>
+              <div className="text-sm text-gray-700">{t("hero.stats.connectionsMade")}</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold mb-2">50+</div>
-              <div className="text-sm opacity-80">{t("hero.stats.eventsMonthly")}</div>
+              <div className="text-3xl font-bold mb-2 text-gray-900">50+</div>
+              <div className="text-sm text-gray-700">{t("hero.stats.eventsMonthly")}</div>
             </div>
           </div>
         </div>
