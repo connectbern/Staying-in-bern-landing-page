@@ -138,8 +138,11 @@
       "stories": "Geschichten",
       "contact": "Kontakt"
     },
-    "toggleMenu": "Menü umschalten",
-    "skipToContent": "Zum Hauptinhalt springen"
+    "toggleMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "skipToContent": "Zum Hauptinhalt springen",
+    "navigationMenu": "Navigationsmenü",
+    "mobileNavigation": "Mobile Navigation"
   },
   "footer": {
     "tagline": "Brücken bauen zwischen Einheimischen und Freiwilligen in Bern, Schweiz. Authentische Verbindungen schaffen, die ein Leben lang halten.",

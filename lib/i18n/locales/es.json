@@ -138,8 +138,11 @@
       "stories": "Historias",
       "contact": "Contacto"
     },
-    "toggleMenu": "Alternar menú",
-    "skipToContent": "Saltar al contenido principal"
+    "toggleMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "skipToContent": "Saltar al contenido principal",
+    "navigationMenu": "Menú de navegación",
+    "mobileNavigation": "Navegación móvil"
   },
   "footer": {
     "tagline": "Construyendo puentes entre locales y voluntarios en Berna, Suiza. Creando conexiones auténticas que duran toda la vida.",

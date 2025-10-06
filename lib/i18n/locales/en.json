@@ -138,8 +138,11 @@
       "stories": "Stories",
       "contact": "Contact"
     },
-    "toggleMenu": "Toggle menu",
-    "skipToContent": "Skip to main content"
+    "toggleMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "skipToContent": "Skip to main content",
+    "navigationMenu": "Navigation menu",
+    "mobileNavigation": "Mobile navigation"
   },
   "footer": {
     "tagline": "Building bridges between locals and volunteers in Bern, Switzerland. Creating authentic connections that last a lifetime.",

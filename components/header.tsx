@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import { Menu, X } from "lucide-react"
 import { useTranslation } from "react-i18next"
 import Link from "next/link"
@@ -12,6 +12,8 @@ interface HeaderProps {
 export function Header({ showNavigation = true }: HeaderProps) {
   const { t } = useTranslation()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const menuButtonRef = useRef<HTMLButtonElement>(null)
+  const mobileMenuRef = useRef<HTMLDivElement>(null)
 
   // Prevent body scroll when menu is open
   useEffect(() => {
@@ -24,6 +26,68 @@ export function Header({ showNavigation = true }: HeaderProps) {
       document.body.style.overflow = 'unset'
     }
   }, [isMenuOpen])
+
+  // Focus trap for mobile menu
+  useEffect(() => {
+    if (!isMenuOpen || !mobileMenuRef.current) return
+
+    const menuElement = mobileMenuRef.current
+    const focusableElements = menuElement.querySelectorAll<HTMLElement>(
+      'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'
+    )
+    const firstElement = focusableElements[0]
+    const lastElement = focusableElements[focusableElements.length - 1]
+
+    // Focus first element when menu opens
+    firstElement?.focus()
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      // Escape key closes menu
+      if (e.key === 'Escape') {
+        setIsMenuOpen(false)
+        menuButtonRef.current?.focus()
+        return
+      }
+
+      // Tab key trap
+      if (e.key === 'Tab') {
+        if (e.shiftKey) {
+          // Shift + Tab: if on first element, go to last
+          if (document.activeElement === firstElement) {
+            e.preventDefault()
+            lastElement?.focus()
+          }
+        } else {
+          // Tab: if on last element, go to first
+          if (document.activeElement === lastElement) {
+            e.preventDefault()
+            firstElement?.focus()
+          }
+        }
+      }
+    }
+
+    document.addEventListener('keydown', handleKeyDown)
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [isMenuOpen])
+
+  // Return focus to menu button when menu closes
+  useEffect(() => {
+    if (!isMenuOpen && menuButtonRef.current) {
+      // Small delay to ensure animations complete
+      const timer = setTimeout(() => {
+        menuButtonRef.current?.focus()
+      }, 100)
+      return () => clearTimeout(timer)
+    }
+  }, [isMenuOpen])
+
+  const handleMenuItemClick = () => {
+    setIsMenuOpen(false)
+  }
 
   return (
     <>
@@ -47,22 +111,41 @@ export function Header({ showNavigation = true }: HeaderProps) {
             <>
               {/* Desktop Navigation */}
               <nav className="hidden md:flex items-center space-x-8">
-                <a href="#mission" className="text-muted-foreground hover:text-foreground transition-colors">
+                <a
+                  href="#mission"
+                  className="text-muted-foreground hover:text-foreground transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded-sm px-2 py-1"
+                >
                   {t("header.nav.mission")}
                 </a>
-                <a href="#benefits" className="text-muted-foreground hover:text-foreground transition-colors">
+                <a
+                  href="#benefits"
+                  className="text-muted-foreground hover:text-foreground transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded-sm px-2 py-1"
+                >
                   {t("header.nav.benefits")}
                 </a>
-                <a href="#testimonials" className="text-muted-foreground hover:text-foreground transition-colors">
+                <a
+                  href="#testimonials"
+                  className="text-muted-foreground hover:text-foreground transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded-sm px-2 py-1"
+                >
                   {t("header.nav.stories")}
                 </a>
-                <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
+                <a
+                  href="#contact"
+                  className="text-muted-foreground hover:text-foreground transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded-sm px-2 py-1"
+                >
                   {t("header.nav.contact")}
                 </a>
               </nav>
 
               {/* Mobile Menu Button */}
-              <button className="md:hidden p-2" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label={t("header.toggleMenu")}>
+              <button
+                ref={menuButtonRef}
+                className="md:hidden p-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                aria-label={isMenuOpen ? t("header.closeMenu", "Close menu") : t("header.toggleMenu")}
+                aria-expanded={isMenuOpen}
+                aria-controls="mobile-menu"
+              >
                 {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
               </button>
             </>
@@ -79,10 +162,16 @@ export function Header({ showNavigation = true }: HeaderProps) {
               }`}
               onClick={() => setIsMenuOpen(false)}
               style={{ top: "64px" }}
+              aria-hidden="true"
             />
 
-            {/* Mobile Menu */}
+            {/* Mobile Menu Drawer */}
             <div
+              ref={mobileMenuRef}
+              id="mobile-menu"
+              role="dialog"
+              aria-modal="true"
+              aria-label={t("header.navigationMenu", "Navigation menu")}
               className={`md:hidden absolute left-0 right-0 bg-background border-b border-border shadow-lg transition-all duration-300 ease-in-out ${
                 isMenuOpen
                   ? "opacity-100 translate-y-0"
@@ -90,32 +179,32 @@ export function Header({ showNavigation = true }: HeaderProps) {
               }`}
               style={{ top: "100%" }}
             >
-              <nav className="flex flex-col py-4 px-4 space-y-4">
+              <nav className="flex flex-col py-4 px-4 space-y-4" aria-label={t("header.mobileNavigation", "Mobile navigation")}>
                 <a
                   href="#mission"
-                  className="text-muted-foreground hover:text-foreground transition-colors py-2 px-3 rounded-lg hover:bg-muted"
-                  onClick={() => setIsMenuOpen(false)}
+                  className="text-muted-foreground hover:text-foreground transition-colors py-2 px-3 rounded-lg hover:bg-muted focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:bg-muted"
+                  onClick={handleMenuItemClick}
                 >
                   {t("header.nav.mission")}
                 </a>
                 <a
                   href="#benefits"
-                  className="text-muted-foreground hover:text-foreground transition-colors py-2 px-3 rounded-lg hover:bg-muted"
-                  onClick={() => setIsMenuOpen(false)}
+                  className="text-muted-foreground hover:text-foreground transition-colors py-2 px-3 rounded-lg hover:bg-muted focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:bg-muted"
+                  onClick={handleMenuItemClick}
                 >
                   {t("header.nav.benefits")}
                 </a>
                 <a
                   href="#testimonials"
-                  className="text-muted-foreground hover:text-foreground transition-colors py-2 px-3 rounded-lg hover:bg-muted"
-                  onClick={() => setIsMenuOpen(false)}
+                  className="text-muted-foreground hover:text-foreground transition-colors py-2 px-3 rounded-lg hover:bg-muted focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:bg-muted"
+                  onClick={handleMenuItemClick}
                 >
                   {t("header.nav.stories")}
                 </a>
                 <a
                   href="#contact"
-                  className="text-muted-foreground hover:text-foreground transition-colors py-2 px-3 rounded-lg hover:bg-muted"
-                  onClick={() => setIsMenuOpen(false)}
+                  className="text-muted-foreground hover:text-foreground transition-colors py-2 px-3 rounded-lg hover:bg-muted focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:bg-muted"
+                  onClick={handleMenuItemClick}
                 >
                   {t("header.nav.contact")}
                 </a>
