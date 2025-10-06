@@ -125,3 +125,43 @@ html {
   white-space: nowrap;
   border: 0;
 }
+
+/* Reduced motion support - WCAG 2.3.3 (Animation from Interactions) */
+@media (prefers-reduced-motion: reduce) {
+  /* Disable all animations and transitions */
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* Remove smooth scrolling */
+  html {
+    scroll-behavior: auto !important;
+  }
+
+  /* Disable custom animations */
+  .animate-fade-in-up {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .animate-float {
+    animation: none !important;
+    transform: none !important;
+  }
+
+  /* Disable skip link transition */
+  .skip-to-content {
+    transition: none !important;
+  }
+
+  /* Ensure focus indicators still appear instantly */
+  :focus-visible {
+    transition: none !important;
+  }
+}
