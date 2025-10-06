@@ -26,8 +26,14 @@ export function Header({ showNavigation = true }: HeaderProps) {
   }, [isMenuOpen])
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <>
+      {/* Skip to main content link - WCAG 2.4.1 Bypass Blocks */}
+      <a href="#main-content" className="skip-to-content">
+        {t("header.skipToContent")}
+      </a>
+
+      <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
@@ -119,5 +125,6 @@ export function Header({ showNavigation = true }: HeaderProps) {
         )}
       </div>
     </header>
+    </>
   )
 }
