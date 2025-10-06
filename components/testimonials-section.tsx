@@ -54,13 +54,16 @@ export function TestimonialsSection() {
 
               {/* Author */}
               <div className="flex items-center">
-                <Image
-                  src={testimonial.image || "/placeholder.svg"}
-                  alt={t(`testimonials.items.${index}.name`)}
-                  width={48}
-                  height={48}
-                  className="w-12 h-12 rounded-full object-cover mr-4"
-                />
+                <div className="relative w-12 h-12 mr-4">
+                  <Image
+                    src={testimonial.image || "/placeholder.svg"}
+                    alt={t(`testimonials.items.${index}.name`)}
+                    fill
+                    sizes="48px"
+                    className="rounded-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
                 <div>
                   <h4 className="font-semibold text-foreground">{t(`testimonials.items.${index}.name`)}</h4>
                   <p className="text-sm text-muted-foreground">{t(`testimonials.items.${index}.role`)}</p>

@@ -13,7 +13,14 @@ export function HeroSection() {
     <section className="pb-6 text-gray-900 overflow-hidden relative bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="absolute top-8 left-8">
-          <Image src="/logo.svg" alt="Staying in Bern Logo" width={192} height={96} className="h-20 w-auto" />
+          <Image
+            src="/logo.svg"
+            alt="Staying in Bern Logo"
+            width={192}
+            height={96}
+            className="h-20 w-auto"
+            priority
+          />
         </div>
 
         <div className="absolute top-8 right-8">
