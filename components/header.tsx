@@ -100,7 +100,10 @@ export function Header({ showNavigation = true }: HeaderProps) {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
+          <Link
+            href="/"
+            className="flex items-center space-x-2 hover:opacity-80 transition-opacity focus:outline-none focus-visible:ring-[3px] focus-visible:ring-primary focus-visible:ring-offset-2 rounded-md"
+          >
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-sm">SB</span>
             </div>
@@ -113,25 +116,25 @@ export function Header({ showNavigation = true }: HeaderProps) {
               <nav className="hidden md:flex items-center space-x-8">
                 <a
                   href="#mission"
-                  className="text-muted-foreground hover:text-foreground transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded-sm px-2 py-1"
+                  className="text-muted-foreground hover:text-foreground transition-colors focus:outline-none focus-visible:ring-[3px] focus-visible:ring-primary focus-visible:ring-offset-2 rounded-md px-3 py-2"
                 >
                   {t("header.nav.mission")}
                 </a>
                 <a
                   href="#benefits"
-                  className="text-muted-foreground hover:text-foreground transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded-sm px-2 py-1"
+                  className="text-muted-foreground hover:text-foreground transition-colors focus:outline-none focus-visible:ring-[3px] focus-visible:ring-primary focus-visible:ring-offset-2 rounded-md px-3 py-2"
                 >
                   {t("header.nav.benefits")}
                 </a>
                 <a
                   href="#testimonials"
-                  className="text-muted-foreground hover:text-foreground transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded-sm px-2 py-1"
+                  className="text-muted-foreground hover:text-foreground transition-colors focus:outline-none focus-visible:ring-[3px] focus-visible:ring-primary focus-visible:ring-offset-2 rounded-md px-3 py-2"
                 >
                   {t("header.nav.stories")}
                 </a>
                 <a
                   href="#contact"
-                  className="text-muted-foreground hover:text-foreground transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded-sm px-2 py-1"
+                  className="text-muted-foreground hover:text-foreground transition-colors focus:outline-none focus-visible:ring-[3px] focus-visible:ring-primary focus-visible:ring-offset-2 rounded-md px-3 py-2"
                 >
                   {t("header.nav.contact")}
                 </a>
@@ -140,7 +143,7 @@ export function Header({ showNavigation = true }: HeaderProps) {
               {/* Mobile Menu Button */}
               <button
                 ref={menuButtonRef}
-                className="md:hidden p-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded"
+                className="md:hidden p-2 focus:outline-none focus-visible:ring-[3px] focus-visible:ring-primary focus-visible:ring-offset-2 rounded-md hover:bg-muted transition-colors"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 aria-label={isMenuOpen ? t("header.closeMenu", "Close menu") : t("header.toggleMenu")}
                 aria-expanded={isMenuOpen}
@@ -182,28 +185,28 @@ export function Header({ showNavigation = true }: HeaderProps) {
               <nav className="flex flex-col py-4 px-4 space-y-4" aria-label={t("header.mobileNavigation", "Mobile navigation")}>
                 <a
                   href="#mission"
-                  className="text-muted-foreground hover:text-foreground transition-colors py-2 px-3 rounded-lg hover:bg-muted focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:bg-muted"
+                  className="text-muted-foreground hover:text-foreground transition-colors py-3 px-4 rounded-lg hover:bg-muted focus:outline-none focus-visible:ring-[3px] focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:bg-muted"
                   onClick={handleMenuItemClick}
                 >
                   {t("header.nav.mission")}
                 </a>
                 <a
                   href="#benefits"
-                  className="text-muted-foreground hover:text-foreground transition-colors py-2 px-3 rounded-lg hover:bg-muted focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:bg-muted"
+                  className="text-muted-foreground hover:text-foreground transition-colors py-3 px-4 rounded-lg hover:bg-muted focus:outline-none focus-visible:ring-[3px] focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:bg-muted"
                   onClick={handleMenuItemClick}
                 >
                   {t("header.nav.benefits")}
                 </a>
                 <a
                   href="#testimonials"
-                  className="text-muted-foreground hover:text-foreground transition-colors py-2 px-3 rounded-lg hover:bg-muted focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:bg-muted"
+                  className="text-muted-foreground hover:text-foreground transition-colors py-3 px-4 rounded-lg hover:bg-muted focus:outline-none focus-visible:ring-[3px] focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:bg-muted"
                   onClick={handleMenuItemClick}
                 >
                   {t("header.nav.stories")}
                 </a>
                 <a
                   href="#contact"
-                  className="text-muted-foreground hover:text-foreground transition-colors py-2 px-3 rounded-lg hover:bg-muted focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:bg-muted"
+                  className="text-muted-foreground hover:text-foreground transition-colors py-3 px-4 rounded-lg hover:bg-muted focus:outline-none focus-visible:ring-[3px] focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:bg-muted"
                   onClick={handleMenuItemClick}
                 >
                   {t("header.nav.contact")}
