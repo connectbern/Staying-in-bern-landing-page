@@ -4,6 +4,8 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.1-38B2AC?style=flat&logo=tailwind-css)](https://tailwindcss.com/)
 
+**🌐 Live Site:** [https://staying-in-bern-qhxsngo88-stayinginberns-projects.vercel.app](https://staying-in-bern-qhxsngo88-stayinginberns-projects.vercel.app)
+
 A vibrant community hub in Bern where locals and international volunteers come together to socialize, connect, and build lasting friendships through shared experiences.
 
 ## 🌟 About
