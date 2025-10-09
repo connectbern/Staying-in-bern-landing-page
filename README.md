@@ -180,7 +180,7 @@ We welcome contributions from the community! Here's how you can help:
 
 ## 📧 Contact
 
-- **Email**: hello@stayinginbern.ch
+- **Email**: hello@stayinginbern.com
 - **Instagram**: [@stayinginbern](https://www.instagram.com/stayinginbern/)
 - **Facebook**: [Staying in Bern](https://www.facebook.com/people/Staying-in-Bern/61579405777769/)
 - **LinkedIn**: [Connect Bern](https://www.linkedin.com/company/connect-bern-staying-in-bern/about/)

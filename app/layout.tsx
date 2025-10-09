@@ -114,7 +114,7 @@ export default function RootLayout({
     ],
     contactPoint: {
       '@type': 'ContactPoint',
-      email: 'hello@stayinginbern.ch',
+      email: 'hello@stayinginbern.com',
       contactType: 'Customer Service',
       availableLanguage: ['en', 'de', 'es']
     }

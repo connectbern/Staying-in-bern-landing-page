@@ -22,7 +22,7 @@ export default function PrivacyPolicyPage() {
                 </p>
                 <p className="text-muted-foreground">
                   If you have any questions or concerns about this policy or our practices regarding your personal information,
-                  please contact us at hello@stayinginbern.ch.
+                  please contact us at hello@stayinginbern.com.
                 </p>
               </section>
 
@@ -122,7 +122,7 @@ export default function PrivacyPolicyPage() {
                   <li><strong>Right to Withdraw Consent:</strong> Withdraw consent at any time</li>
                 </ul>
                 <p className="text-muted-foreground mt-4">
-                  To exercise these rights, please contact us at hello@stayinginbern.ch. We will respond to your request within
+                  To exercise these rights, please contact us at hello@stayinginbern.com. We will respond to your request within
                   30 days.
                 </p>
               </section>
@@ -168,7 +168,7 @@ export default function PrivacyPolicyPage() {
                 </p>
                 <div className="bg-muted p-4 rounded-lg">
                   <p className="text-foreground"><strong>Staying in Bern</strong></p>
-                  <p className="text-muted-foreground">Email: hello@stayinginbern.ch</p>
+                  <p className="text-muted-foreground">Email: hello@stayinginbern.com</p>
                   <p className="text-muted-foreground">Location: Bern, Switzerland</p>
                 </div>
               </section>

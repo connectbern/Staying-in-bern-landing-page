@@ -178,7 +178,7 @@ export default function CopyrightNoticePage() {
                   obtain our prior written permission. To request permission:
                 </p>
                 <ol className="list-decimal list-inside text-muted-foreground space-y-2">
-                  <li>Email us at hello@stayinginbern.ch with the subject line "Copyright Permission Request"</li>
+                  <li>Email us at hello@stayinginbern.com with the subject line "Copyright Permission Request"</li>
                   <li>Describe the Content you wish to use</li>
                   <li>Explain how you intend to use it</li>
                   <li>Specify the duration and geographic scope of the intended use</li>
@@ -224,7 +224,7 @@ export default function CopyrightNoticePage() {
                 <div className="bg-muted p-4 rounded-lg">
                   <p className="text-foreground"><strong>Copyright Agent</strong></p>
                   <p className="text-foreground"><strong>Staying in Bern</strong></p>
-                  <p className="text-muted-foreground">Email: hello@stayinginbern.ch</p>
+                  <p className="text-muted-foreground">Email: hello@stayinginbern.com</p>
                   <p className="text-muted-foreground">Subject Line: Copyright Notice/Request</p>
                   <p className="text-muted-foreground">Location: Bern, Switzerland</p>
                 </div>

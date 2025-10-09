@@ -211,7 +211,7 @@ export default function TermsOfServicePage() {
                 </p>
                 <div className="bg-muted p-4 rounded-lg">
                   <p className="text-foreground"><strong>Staying in Bern</strong></p>
-                  <p className="text-muted-foreground">Email: hello@stayinginbern.ch</p>
+                  <p className="text-muted-foreground">Email: hello@stayinginbern.com</p>
                   <p className="text-muted-foreground">Location: Bern, Switzerland</p>
                 </div>
               </section>
