@@ -21,7 +21,7 @@ export default function PrivacyPolicyPage() {
                   to connect locals and volunteers in Bern, Switzerland.
                 </p>
                 <p className="text-muted-foreground">
-                  If you have any questions or concerns about this policy or our practices regarding your personal information,
+                  If you have any questions or any concerns about this policy or our practices regarding your personal information,
                   please contact us at hello@stayinginbern.com.
                 </p>
               </section>
