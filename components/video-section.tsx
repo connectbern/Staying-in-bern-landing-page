@@ -19,8 +19,8 @@ export function VideoSection() {
           <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl">
             <iframe
               className="absolute top-0 left-0 w-full h-full"
-              src="https://www.youtube.com/embed/yQIfVFEjHeg"
-              title="YouTube video player"
+              src="https://www.youtube.com/embed/b-u19Z3SypU"
+              title="Staying in Bern Community Video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             />
