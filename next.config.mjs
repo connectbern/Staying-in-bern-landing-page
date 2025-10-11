@@ -20,6 +20,15 @@ const nextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/map',
+        destination: 'https://play.workadventu.re/@/connect-bern-map/connect-bern-map/welcome',
+        permanent: false,
+      },
+    ]
+  },
 }
 
 export default nextConfig
